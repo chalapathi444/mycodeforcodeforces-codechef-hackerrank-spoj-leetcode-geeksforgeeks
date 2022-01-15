@@ -10,20 +10,20 @@ int main()
 	{
 		cin>>arr[i];
 	}
-	int low = 0,high = n-1;
+	int low = 0,h = n-1;
 	int time = 0;
 	ll sreja_score = 0,getha_score= 0,temp;
-	while(low <= high)
+	while(low <= h)
 	{
-		if(arr[low] > arr[high])
+		if(arr[low] > arr[h])
 		{
 			temp = arr[low];
 			low++;
 		}
 		else
 		{
-			temp  = arr[high];
-			high--;
+			temp  = arr[h];
+			h--;
 		}
 		if(time%2 == 0)
 		{
